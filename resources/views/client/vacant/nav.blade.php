@@ -23,7 +23,7 @@
         </div>
         <div id="navbar" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item button is-small is-success" href="#vagas">
+            <a class="navbar-item button is-small is-success" href="{{Route('client.home')}}">
                     Voltar
                 </a>
                 

@@ -61,11 +61,11 @@
                     <label class="label">Qual seu nível de inglês?</label>
                     <div class="control">
                         <select>
-                            <option value="1">Não sei inglês</option>
-                            <option value="2">Básico</option>
-                            <option value="3">Intermediário</option>
-                            <option value="4">Avançado</option>
-                            <option value="5">Fluente</option>
+                            <option value="nothing">Não sei inglês</option>
+                            <option value="starter">Básico</option>
+                            <option value="intermediate">Intermediário</option>
+                            <option value="advanced">Avançado</option>
+                            <option value="fluent">Fluente</option>
                         </select>
                     </div>
                 </div>
