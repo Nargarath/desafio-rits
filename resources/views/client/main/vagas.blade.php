@@ -7,62 +7,16 @@
             
         </div> 
         <div class="vaga-list">
-            @component('client.components.vaga-card',
-                [
-                    'vaga'=>'Desenvolvedor Frontend',
-                    'location'=>[
-                        'uf' => 'RN',
-                        'city'=>'Natal',
-                        'country' => "Brasil"
-                    ]
-                ]
-            )
-            @endcomponent
+            @if(!empty($jobs))
+                @foreach ($jobs as $job )
+                    @component('client.components.vaga-card',['job'=>$job])
+                    @endcomponent
+                @endforeach
+            @else
+                Sem vagas no momento
+            @endif
+            
 
-            @component('client.components.vaga-card',
-                [
-                    'vaga'=>'Desenvolvedor Frontend',
-                    'location'=>[
-                        'uf' => 'RN',
-                        'city'=>'Natal',
-                        'country' => "Brasil"
-                    ]
-                ]
-            )
-            @endcomponent
-            @component('client.components.vaga-card',
-                [
-                    'vaga'=>'Desenvolvedor Frontend',
-                    'location'=>[
-                        'uf' => 'RN',
-                        'city'=>'Natal',
-                        'country' => "Brasil"
-                    ]
-                ]
-            )
-            @endcomponent
-            @component('client.components.vaga-card',
-                [
-                    'vaga'=>'Desenvolvedor Frontend',
-                    'location'=>[
-                        'uf' => 'RN',
-                        'city'=>'Natal',
-                        'country' => "Brasil"
-                    ]
-                ]
-            )
-            @endcomponent
-            @component('client.components.vaga-card',
-                [
-                    'vaga'=>'Desenvolvedor Frontend',
-                    'location'=>[
-                        'uf' => 'RN',
-                        'city'=>'Natal',
-                        'country' => "Brasil"
-                    ]
-                ]
-            )
-            @endcomponent
             
         </div>
 </section>

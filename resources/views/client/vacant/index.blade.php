@@ -1,5 +1,3 @@
-@extends('client.master')
-
 <style>
     nav{
         padding-bottom: 4rem !important;
@@ -16,18 +14,23 @@
         border-bottom-color: #F1F1F1;
     }
 </style>
-@component('client.vacant.nav')
-    
-@endcomponent
+@extends('client.master')
 
-@component('client.vacant.hero')
-    
-@endcomponent
+@section('body')
 
-@component('client.vacant.form')
-    
-@endcomponent
+    @component('client.vacant.nav')
+        
+    @endcomponent
 
-@component('client.main.footer')
+    @component('client.vacant.hero',['job'=>$job,'assignments'=>$assignments])
+        
+    @endcomponent
 
-@endcomponent
+    @component('client.vacant.form',['job_id'=>$job->id])
+        
+    @endcomponent
+
+    @component('client.main.footer')
+
+    @endcomponent
+@stop

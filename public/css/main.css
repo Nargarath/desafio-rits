@@ -320,6 +320,11 @@ section{
     padding: 1.2rem;
     margin: .4rem auto .4rem auto;
 }
+.vaga-card a{
+    color: #ACCB34;
+    cursor: default;
+    text-decoration: none;
+}
 .vaga-card::after {
     content: '';
     width: 100%;
@@ -351,6 +356,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 950px;
+    margin:0 auto;
     
 }
 @media(min-width:769px){
@@ -532,6 +539,26 @@ input,textarea,select {
     border: .4px solid #DCDEE2;
     border-radius: 4px;
 }
+.is-success p{
+    color: #ACCB34;
+}
+
+.is-success{
+    border-color: #ACCB34;
+}
+.is-success label{
+    color: #ACCB34;
+}
+.is-danger p{
+    color: #EF3F6E;
+}
+
+.is-danger{
+    border-color: #EF3F6E;
+}
+.is-danger label{
+    color: #EF3F6E;
+}
 .control{
     display: inline-flex;
 }
@@ -595,4 +622,38 @@ input,textarea,select {
     font-size: 30px;
     font-weight: 900;
     content:'*';
+}
+
+
+.file-buttom-pressed{
+    background-color:#563C8F;
+    color:#FFFFFF;
+}
+
+.success_screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin:0 auto;
+    padding: 6rem 0 6rem 0;
+}
+.success_screen h3{
+    color: #563C8F;
+    font-size: 30px;
+    font-weight: 700;
+}
+.success_screen h3>span{
+    color: #ACCB34;
+
+}
+
+.button-column{
+    display:flex;
+    justify-content: flex-end;
+}
+.button-column>.button{
+    display:none;
+    font-size: 14px;
+    padding: 1.3rem 1rem 1.3rem 1rem;
 }

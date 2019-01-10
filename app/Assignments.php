@@ -12,10 +12,16 @@ class Assignments extends Model
     
     public function scopeGroupByType($query){
 
-        $query->groupBy('type');   
-        return $query;
+        $collection = collect($query->get());
+        
+        $grouped= $collection->groupBy(function ($item, $key) {
+        
+        return $item['type'];
+        });
+         
+        return $grouped;
    
-     }
+    }
     public function job()
     {
         return $this->belongsTo(JobVacants::class);

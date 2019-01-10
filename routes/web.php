@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::namespace('Api')->group(function () {
-    // Controllers Within The "App\Http\Controllers\Admin" Namespace
+Route::namespace('Api')->prefix('api')->group(function () {
+    Route::post('/vaga/{id}/candidato/add', 'CandidateController@store')->name('api.candidate.add');
 });
 
 Route::namespace('Client')->group(function () {

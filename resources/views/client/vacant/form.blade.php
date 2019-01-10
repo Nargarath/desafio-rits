@@ -1,3 +1,3 @@
 <div id="app">
-    <vacant-form :vacant_id="1"/>
+    <vacant-form :vacant_id="{{$job_id}}"/>
 </div>

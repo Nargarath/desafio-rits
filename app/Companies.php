@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Companies extends Model
 {
     protected $fillable = [
-        'name','address', 'number', 'city','state','contry'
+        'name','address', 'number','complement','CEP','neighborhood', 'city','state','country'
     ];
 
     function vacants(){

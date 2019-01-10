@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCurriculumTable extends Migration
+class CreateAssignmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateCurriculumTable extends Migration
      */
     public function up()
     {
-        Schema::create('curriculums', function (Blueprint $table) {
+        Schema::create('assignments', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('extension');
-            $table->integer('candidate_id')->unsigned();;
+            $table->enum('type',['will_do','need_be','work_with']);
+            $table->longText('text');
+            $table->integer('job_id')->unsigned();
+            $table->foreign('job_id')->references('id')->on('job_vacants');
             $table->timestamps();
-
-            $table->foreign('candidate_id')->references('id')->on('candidate')->onDelete('cascade');
         });
     }
 
@@ -31,6 +30,6 @@ class CreateCurriculumTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('curriculums');
+        Schema::dropIfExists('assignments');
     }
 }

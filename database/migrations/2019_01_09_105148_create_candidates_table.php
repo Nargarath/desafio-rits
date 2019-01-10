@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCandidateTable extends Migration
+class CreateCandidatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -23,6 +23,9 @@ class CreateCandidateTable extends Migration
             $table->string('github');
             $table->enum('english_level', ['nothing', 'starter','intermediate','advanced','fluent']);
             $table->string('salary_pretension');
+            $table->enum('status',['fresh', 'contacted','interviewee','challenge','hired','nothired']);
+            $table->integer('job_id')->unsigned();
+            $table->foreign('job_id')->references('id')->on('jobvacants');
             $table->timestamps();
         });
     }
