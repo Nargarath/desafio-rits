@@ -134,7 +134,7 @@ header.hero.is-primary{
 .subtitle p{
     margin-top: 1rem ;
 }
-@media(min-width:375px){
+@media(min-width:651px){
     .rits-simbol{
         margin-left: -6px;
         padding: 0 5px 0 80px;
@@ -152,27 +152,33 @@ header.hero.is-primary{
         border-right-color: #F1F1F1;
         border-right-width: 50px;
     }
-    .rits-simbol.invert .title{
-        padding: 6rem 0 6rem 0;
-        display:flex;
-        justify-content: right;
-
-    }
     .rits-simbol.invert .title>div{
         margin: 0 8rem 0 auto;
+        text-align: left;
         
     }
-    .rits-simbol.invert .title h1{
-        color: #563C8F;
-        font-size: 40px;
-        text-transform: uppercase;
-        font-weight: 900;
-        margin-bottom: 4rem;
-    }
-    .rits-simbol.invert .title h2{
-        margin-bottom: 4rem;
-        font-size: 16px;
-    }
+    
+}
+.rits-simbol.invert .title{
+    padding: 6rem 0 6rem 0;
+    display:flex;
+    justify-content: right;
+
+}
+.rits-simbol.invert>div{
+    margin: 0 auto auto 1rem;
+    text-align: center;
+}
+.rits-simbol.invert .title h1{
+    color: #563C8F;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 4rem;
+}
+.rits-simbol.invert .title h2{
+    margin-bottom: 4rem;
+    font-size: 16px;
 }
 .rits-simbol .text{
     width:100%;
@@ -357,8 +363,12 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 950px;
+    height: 50%;
     margin:0 auto;
     
+}
+.image img{
+    height: 50%;
 }
 @media(min-width:769px){
     .employee-img{
