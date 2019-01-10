@@ -20137,9 +20137,11 @@ var render = function() {
           _vm._v(" "),
           _vm._m(0)
         ])
-      : _vm._e(),
-    _vm._v(" "),
-    _vm._m(1)
+      : _c("div", { staticClass: "success_screen" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
   ])
 }
 var staticRenderFns = [
@@ -20158,24 +20160,26 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "success_screen" }, [
-      _c("div", { staticClass: "check_mark" }, [
-        _c("div", { staticClass: "sa-icon sa-success animate" }, [
-          _c("span", { staticClass: "sa-line sa-tip animateSuccessTip" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "sa-line sa-long animateSuccessLong" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "sa-placeholder" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "sa-fix" })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("h3", [
-        _vm._v("Recebemos a sua intenção de candidatura com "),
-        _c("span", [_vm._v("sucesso")]),
-        _vm._v(", agora é só aguardar!")
+    return _c("div", { staticClass: "check_mark" }, [
+      _c("div", { staticClass: "sa-icon sa-success animate" }, [
+        _c("span", { staticClass: "sa-line sa-tip animateSuccessTip" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "sa-line sa-long animateSuccessLong" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "sa-placeholder" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "sa-fix" })
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", [
+      _vm._v("Recebemos a sua intenção de candidatura com "),
+      _c("span", [_vm._v("sucesso")]),
+      _vm._v(", agora é só aguardar!")
     ])
   }
 ]
@@ -31641,8 +31645,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Nargamon\Desktop\Rits\rits-carreiras\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Nargamon\Desktop\Rits\rits-carreiras\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Nargamon\Desktop\test\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Nargamon\Desktop\test\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

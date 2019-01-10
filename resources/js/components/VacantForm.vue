@@ -108,7 +108,7 @@
             </div>
 
         </form>
-        <div class="success_screen">
+        <div v-else class="success_screen">
             <div class="check_mark">
                 <div class="sa-icon sa-success animate">
                     <span class="sa-line sa-tip animateSuccessTip"></span>
