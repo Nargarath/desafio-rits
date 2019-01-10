@@ -25,7 +25,7 @@ class CreateCandidatesTable extends Migration
             $table->string('salary_pretension');
             $table->enum('status',['fresh', 'contacted','interviewee','challenge','hired','nothired']);
             $table->integer('job_id')->unsigned();
-            $table->foreign('job_id')->references('id')->on('jobvacants');
+            $table->foreign('job_id')->references('id')->on('job_vacants');
             $table->timestamps();
         });
     }
