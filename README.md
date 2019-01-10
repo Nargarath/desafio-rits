@@ -12,6 +12,17 @@
     - [Seeds](https://laravel.com/docs/5.7/seeding)
 - [Views](https://laravel.com/docs/5.7/views)
 
+
+## Tecnologias usadas no projeto
+
+- [Laravel](https://laravel.com/)
+- [VueJS]https://vuejs.org/)
+- [Ziggy]https://github.com/tightenco/ziggy)
+- [JQuery](https://jquery.com/)
+
+
+
+
 ## Instalando e rodando o projeto
 
 ### 1 - Faça o clone projeto
