@@ -103,8 +103,17 @@ php artisan db:seed
 
 ```
 
+### 9 - Rode o projeto
 
-### 9 - Orientações
+Nessa etapa você pode fazer como quiser, existem vária formas de você hospedar o projeto para acessa-lo. Aqui , explicarei o jeito mais rápido que é usando o server do próprio laravel. Para inicializa-lo, você precisa digitar o comando abaixo no console ou base , em seguida, o script retornará o link que estará rodando para você acessa-lo.
+
+```bash
+
+php artisan serve
+
+```
+
+### 10 - Orientações
 
 Se você seguiu todas as etapas acima, o unico erro que pode ocorrer, mas nem sempre ocorre, é que se a pasta storage não estiver com nivel de permissão 777 , pode dar erro ao tentar acessar o sistema, para corrigir é só dar um chmod recursivo na pasta.
 
