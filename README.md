@@ -16,8 +16,8 @@
 ## Tecnologias usadas no projeto
 
 - [Laravel](https://laravel.com/)
-- [VueJS]https://vuejs.org/)
-- [Ziggy]https://github.com/tightenco/ziggy)
+- [VueJS](https://vuejs.org/)
+- [Ziggy](https://github.com/tightenco/ziggy)
 - [JQuery](https://jquery.com/)
 
 
