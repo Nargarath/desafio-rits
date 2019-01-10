@@ -12,6 +12,7 @@
     - [Seeds](https://laravel.com/docs/5.7/seeding)
 - [Views](https://laravel.com/docs/5.7/views)
 
+## Instalando e rodando o projeto
 
 ### 1 - Faça o clone projeto
 
