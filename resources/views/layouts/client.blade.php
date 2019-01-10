@@ -30,5 +30,6 @@
     crossorigin="anonymous"></script>
 
     <script src="{{asset('js/smooth-scroll.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     @routes
 </html>

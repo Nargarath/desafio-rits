@@ -14,7 +14,7 @@
         border-bottom-color: #F1F1F1;
     }
 </style>
-@extends('client.master')
+@extends('layouts.client')
 
 @section('body')
 

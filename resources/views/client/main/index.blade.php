@@ -1,4 +1,4 @@
-@extends('client.master')
+@extends('layouts.client')
 
 @section('body')
     @component('client.main.hero')
