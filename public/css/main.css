@@ -159,18 +159,30 @@ header.hero.is-primary{
     }
     
 }
-.navbar-rits{
-    display: flex;
-    width: 182px;
-    margin: 0 1rem 0 auto;
-    justify-content: center;
-    background-image:none!important;
-    background-color:#4a4a4a !important;
-    padding: 1rem;
+@media(max-width:1088px){
+    .navbar-menu{
+        display: flex;
+        width: 182px;
+        margin: 0 1rem 0 auto;
+        justify-content: center;
+        background-image:none !important;
+        background-color:#4a4a4a !important;
+        padding: 1rem;
+    }
+    
+    .navbar-menu .button{
+        padding-bottom:28px;
+        padding-top:12px;
+    }
 }
-.navbar-rits .button{
-    padding-bottom:28px;
-    padding-top:12px;
+@media(min-width:1088px){
+    .navbar-menu{
+        background-image:none;
+        background-color:transparent ;
+    }
+    .navbar-menu .button{
+        padding:16px;
+    }
 }
 .rits-simbol.invert .title{
     padding: 6rem 0 6rem 0;
