@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::namespace('Api')->prefix('api')->group(function () {
     Route::post('/vaga/{id}/candidato/add', 'CandidateController@store')->name('api.candidate.add');
 });

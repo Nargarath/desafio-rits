@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller as Controller;
 
+use App\Candidates;
+
 class CandidateController extends Controller
 {
     public function __construct()
@@ -13,7 +15,9 @@ class CandidateController extends Controller
     }
 
     public function index(Request $request){
-        
+        $candidates = Candidates::all();
+
+        return response()->view('admin.candidates.index',compact('candidates'));
     }
     public function create(){
         return '';
