@@ -16,7 +16,7 @@
             <h3 class="box-title">Tabela de Candidatos</h3>
         </div>
         <div class="box-body">
-            <table id="jobsTable" class="table table-striped table-bordered table-hover">
+            <table id="candidatesTable" class="table table-striped table-bordered table-hover">
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -59,7 +59,7 @@
     <script>
         $(document).ready(function(){
         
-        $("#jobsTable").DataTable();
+        $("#candidatesTable").DataTable();
         
         });
         
