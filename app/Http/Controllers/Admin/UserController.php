@@ -7,10 +7,6 @@ use App\Http\Controllers\Controller as Controller;
 
 class UserController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     public function index(Request $request){
         

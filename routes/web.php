@@ -26,9 +26,9 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', function () {
         return redirect(route('admin.login'),301);
     });
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::middleware('auth')->get('/home', 'HomeController@index')->name('home');
 
-    Route::prefix('users')->name('users.')->group(function () {
+    Route::middleware('auth')->prefix('users')->name('users.')->group(function () {
         Route::get('/', 'UserController@index')->name('index');
         Route::get('adicionar', 'UserController@create')->name('create');
         Route::post('salvar', 'UserController@store')->name('store');
@@ -36,7 +36,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::put('{id}', 'UserController@update')->name('update');
         Route::get('deletar/{id}', 'UserController@destroy')->name('destroy');
     });
-    Route::prefix('jobs')->name('jobs.')->group(function () {
+    Route::middleware('auth')->prefix('jobs')->name('jobs.')->group(function () {
         Route::get('/', 'JobVacantController@index')->name('index');
         Route::get('adicionar', 'JobVacantController@create')->name('create');
         Route::post('salvar', 'JobVacantController@store')->name('store');
@@ -44,7 +44,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         Route::patch('{id}', 'JobVacantController@update')->name('update');
         Route::get('deletar/{id}', 'JobVacantController@destroy')->name('destroy');
     });
-    Route::prefix('candidates')->name('candidates.')->group(function () {
+    Route::middleware('auth')->prefix('candidates')->name('candidates.')->group(function () {
         Route::get('/', 'CandidateController@index')->name('index');
         Route::get('adicionar', 'CandidateController@create')->name('create');
         Route::post('salvar', 'CandidateController@store')->name('store');

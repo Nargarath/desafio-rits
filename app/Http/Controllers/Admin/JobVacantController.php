@@ -11,11 +11,7 @@ use App\Companies;
 
 class JobVacantController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
+
     public function index(Request $request){
         $jobs = JobVacants::all();
 

@@ -9,11 +9,7 @@ use App\Candidates;
 
 class CandidateController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
+    
     public function index(Request $request){
         $candidates = Candidates::all();
 
